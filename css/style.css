@@ -130,13 +130,15 @@ img {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 780px;
+    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .container {
-    max-width: 492px;
+    .row {
+      flex-wrap: wrap;
+    }
     .col {
       width: 100%;
     }
